@@ -17,6 +17,8 @@ public class Atividade {
 	
 	int opcao=leia.nextInt();
 	
+	int maior;
+	
 	switch(opcao) {
 	
 	case 1:
@@ -26,22 +28,25 @@ public class Atividade {
 	break;
 	
 	case 2:
-		System.out.println("Segunda");
 		
+		if(numero1>numero2) {
+			maior=numero1;
+			System.out.println(maior-numero2);
+		}else {
+			System.out.println(numero2-numero1);
+		}
 		break;
 		
 	case 3:
-		System.out.println("Terça");
+		System.out.println(numero1*numero2);
 		break;
 		
 	case 4:
-		System.out.println("Quarta");
+		System.out.println(numero1/numero2);
 		break;
 		
-		
-	case 5:
-		System.out.println("Quinta");
-		break;
+	default:
+		System.out.println("Inválido");
 		
 
 	}
